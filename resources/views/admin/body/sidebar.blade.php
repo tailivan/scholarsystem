@@ -56,27 +56,83 @@
                     
                 </ul>
             </li>
-
-
-
-            <li class="header nav-small-cap">User Interface</li>
-
-            <li class="treeview">
+        
+            <li class="treeview {{ ($prefix == '/hockey' ? 'active' : '') }} ">
                 <a href="#">
-                    <i data-feather="grid"></i>
-                    <span>Components</span>
+                    <i data-feather="mail"></i> <span>Sport</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-right pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="components_alerts.html"><i class="ti-more"></i>Alerts</a></li>
+                    <li><a href="{{ route('pat.view') }}"><i class="ti-more"></i>Patinoires</a></li>
+                    <li><a href="{{ route('pat.add') }}"><i class="ti-more"></i>Ajouter une patinoire</a></li>
+                    <li><a href="{{ route('team.view') }}"><i class="ti-more"></i>Equipe</a></li>
+                    <li><a href="{{ route('team.add') }}"><i class="ti-more"></i>Ajouter une équipe</a></li>
+                    <li><a href="{{ route('poste.view') }}"><i class="ti-more"></i>Poste</a></li>
+                    <li><a href="{{ route('poste.add') }}"><i class="ti-more"></i>Ajouter un poste</a></li>
+                    <li><a href="{{ route('player.view') }}"><i class="ti-more"></i>Joueurs</a></li>
+                    <li><a href="{{ route('player.add') }}"><i class="ti-more"></i>Ajouter un joueur</a></li>
+                    <li><a href="{{ route('compet.view') }}"><i class="ti-more"></i>Matchs</a></li>
+                    <li><a href="{{ route('compet.add') }}"><i class="ti-more"></i>Ajouter un Match</a></li>
+                    <li><a href="{{ route('table.view') }}"><i class="ti-more"></i>Résultats</a></li>
+                    <li><a href="{{ route('goal.view') }}"><i class="ti-more"></i>Goals</a></li>
+                    <li><a href="{{ route('goal.add') }}"><i class="ti-more"></i>Ajouter un Goal</a></li>
+                    <li><a href="{{ route('goal.rang') }}"><i class="ti-more"></i>Buteurs</a></li>
+                    
+
+                    
+                </ul>
+            </li>
+
+            <li class="treeview {{ ($prefix == '/content' ? 'active' : '') }} ">
+                <a href="#">
+                    <i data-feather="mail"></i> <span>Compe-Rendu</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-right pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="{{ route('writer.view') }}"><i class="ti-more"></i>Auteurs</a></li>
+                    <li><a href="{{ route('writer.add') }}"><i class="ti-more"></i>Ajouter un auteurl</a></li>
+                    <li><a href="{{ route('recit.view') }}"><i class="ti-more"></i>Comptes-Rendus</a></li>
+                    <li><a href="{{ route('recit.add') }}"><i class="ti-more"></i>Ajouter un compte-rendu</a></li>
+                    <li><a href="{{ route('carou.view') }}"><i class="ti-more"></i>Carrousel</a></li>
+                    <li><a href="{{ route('carou.add') }}"><i class="ti-more"></i>Ajouter un carrousel</a></li>
+                    <li><a href="{{ route('filter.view') }}"><i class="ti-more"></i>Filtre</a></li>
+                    <li><a href="{{ route('filter.add') }}"><i class="ti-more"></i>Ajouter un filtre</a></li>
 
                 </ul>
+            </li>
+       
+            <li class="treeview {{ ($prefix == '/shop' ? 'active' : '') }} ">
+                <a href="#">
+                    <i data-feather="mail"></i> <span>Boutique</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-right pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="{{ route('cat.view') }}"><i class="ti-more"></i>Catégorie</a></li>
+                    <li><a href="{{ route('cat.add') }}"><i class="ti-more"></i>Ajouter une catégorie</a></li>
+                    <li><a href="{{ route('subcat.view') }}"><i class="ti-more"></i>Sous-Catégorie</a></li>
+                    <li><a href="{{ route('subcat.add') }}"><i class="ti-more"></i>Ajouter une sous-catégorie</a></li>
+                    <li><a href="{{ route('product.view') }}"><i class="ti-more"></i>Produits</a></li>
+                    <li><a href="{{ route('product.add') }}"><i class="ti-more"></i>Ajouter un produit</a></li>
+                    <li><a href="{{ route('userorder') }}"><i class="ti-more"></i>Commandes</a></li>
+                    
+
+                </ul>
+
+                
             </li>
 
 
 
+
+
+
+   
 
 
         </ul>

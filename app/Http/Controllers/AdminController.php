@@ -13,4 +13,16 @@ class AdminController extends Controller
         Auth::logout();
         return Redirect()->route('login');
     }
+
+    public function dashboard()
+    {
+        if(auth()->user()->is_admin == 1)
+        {
+            return view('admin.index'); 
+        }else{
+            return redirect()->route('home');
+
+        }
+       
+    }
 }

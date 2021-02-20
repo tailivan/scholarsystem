@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="{{ asset('backend/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('backend/css/skin_color.css') }}">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 
 </head>
 
@@ -54,8 +55,10 @@
     <!-- Sunny Admin App -->
     <script src="{{ asset('backend/js/template.js') }}"></script>
     <script src="{{ asset('backend/js/pages/dashboard.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    
     <script>
 
         $(function(){
@@ -113,6 +116,13 @@
         }
         @endif
     </script>
+
+<script>
+ $(document).ready(function() {
+          $('.summernote').summernote();
+        });
+</script>
+
 </body>
 
 </html>
